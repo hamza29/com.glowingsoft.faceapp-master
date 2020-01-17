@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Face App</string>
+    <string name="none_filter">no filter</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="text_null">Enter Text First</string>
+    <string name="save_image">Image saved successfully.</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#802EB7</color>
+    <color name="colorPrimaryDark">#D86B2699</color>
+    <color name="colorAccent">#802EB7</color>
+
+    <color name="progress_background">#0D000000</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="dot_color">#151515</color>
+    <color name="backgroundcolor">#802EB7</color>
+    <color name="backdialog">#802EB7</color>
+    <color name="btn">#802EB7</color>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.makemeold.agefaceeditor">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:largeHeap="true"
+        android:name="com.makemeold.agefaceeditor.share.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.PrivacyPolicyScreen"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.MyPhotosActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.FontActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.StickerScreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.HomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.MainScreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.ResultScreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.makemeold.agefaceeditor.activity.FullScreenImageScreen"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

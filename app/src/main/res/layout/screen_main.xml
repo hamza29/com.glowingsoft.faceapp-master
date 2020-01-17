@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundcolor">
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/fatlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip" />
+
+    <LinearLayout
+
+        android:layout_marginRight="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:id="@+id/fateffect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btnbar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/letsgo"
+            android:tint="@color/dot_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Let's Go"
+            android:textColor="@color/dot_color"
+            android:textSize="@dimen/_17sdp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/loadingparent">
+
+        <ImageView
+            android:id="@+id/frontface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/waiting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/CircularProgress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18.0dip"
+            android:text="Applying Effect .. Please Wait.."
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20.0dip"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/loadingbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_text" />
+
+        <ImageView
+            android:id="@+id/waiting_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/loadingbg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:src="@drawable/waiting_loading" />
+    </RelativeLayout>
+</RelativeLayout>
